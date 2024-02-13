@@ -22,7 +22,7 @@
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/triangle.png" alt="Triangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title text-center">Triangle</h2>
+                        <h2 class="card-title justify-center">Triangle</h2>
                         <p class="text-center text-3xl">Area = 0.5 X b X h</p>
                         <div>
                             <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
@@ -45,7 +45,7 @@
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/rectangle.png" alt="Rectangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Rectangle</h2>
+                        <h2 class="card-title justify-center">Rectangle</h2>
                         <p class="text-center text-xl">Area (A) = Width x Length</p>
                         <div>
                             <input class="w-24 text-2xl p-2 rounded-sm" type="text" id="rectangle-width"
@@ -56,7 +56,8 @@
                             <span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl ">Area: <span id="rectangle-area">0 </span><span> cm<span><sup>2</sup></span></span></p>
+                            <p class="text-2xl ">Area: <span id="rectangle-area">0 </span><span>
+                                    cm<span><sup>2</sup></span></span></p>
                         </div>
 
                         <div class="card-actions">
@@ -66,22 +67,60 @@
                 </div>
                 <!--Parallelogram Card-->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/parallelogram.png"
-                            alt="Parallelogram" /></figure>
+                    <figure><img src="images/parallelogram.png" alt="Parallelogram" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Parallelogram</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title justify-center">Parallelogram</h2>
+                        <p class="text-3xl">Area (A) = b x h</p>
+                        <div>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="base">
+                            <span class="mr-4 ml-2"> cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="height">
+                            <span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl ">Area: <span id="parallelogram-area">0 </span> <span> cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick=" calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!--Rhombus Card-->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/rhombus.png"
-                            alt="Rhombus" /></figure>
+                    <figure><img src="images/rhombus.png" alt="Rhombus" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Rhombus</h2>
+                        <h2 class="card-title justify-center">Rhombus</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions ">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Pentagon Card-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Pentagon" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">Pentagon</h2>
+                        <p class="text-xl">Area = 0.5 x perimeter x apothem</p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="perimeter">
+                            
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="apothem">
+                           
+                        </div>
+                        <div>
+                            <p>Area: <span id="pentagon-area">0</span></p>
+                        </div>
+                        <div class="card-actions ">
+                            <button onclick=" calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Ellipse Card-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="Ellipse" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">Ellipse</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions ">
                             <button class="btn btn-primary w-full">Calculate</button>
@@ -97,6 +136,8 @@
     </main>
     <script src="js/triangle calculate.js"></script>
     <script src="js/ractangle area.js"></script>
+    <script src="js/Parallelogram area.js"></script>
+    <script src="js/Pentagon area.js"></script>
 </body>
 
 </html>
